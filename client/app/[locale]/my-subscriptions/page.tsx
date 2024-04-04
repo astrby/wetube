@@ -22,7 +22,7 @@ interface User{
   profilePicture: string,
 }
 
-const page = () => {
+const Page = () => {
 
   const userId = getCookie('user-id');
   const jwt = getCookie('jwt');
@@ -99,4 +99,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

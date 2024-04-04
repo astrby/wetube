@@ -13,7 +13,7 @@ interface Video{
     videoUrl: string,
 }
 
-const page = () => {
+const Page = () => {
 
     const params = useParams();
     const search = params.search;
@@ -54,4 +54,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

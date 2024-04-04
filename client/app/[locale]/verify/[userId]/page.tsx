@@ -5,7 +5,7 @@ import {useParams} from 'next/navigation';
 import {useScopedI18n} from '../../../../locales/client';
 import {errorAlert} from '../../../ui/alerts';
 
-const page = () => {
+const Page = () => {
 
   const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL;
   const params = useParams();
@@ -38,4 +38,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
