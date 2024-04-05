@@ -65,8 +65,6 @@ const Video = () => {
                                         <Reactions/>
                                     </div>
                                 }
-                                
-                            
                         </div>
                     </div>
                     <div className='bg-neutral-200 rounded mt-10 min-h-20'>
@@ -95,7 +93,7 @@ const Video = () => {
                     }
                     </div>
                     <div className='mt-5 ps-2'>
-                        <p className='pt-5 text-lg font-bold mb-10'>{scopedT('comments')}</p>
+                        <p className='pt-5 text-md font-bold mb-10'>{scopedT('comments')}</p>
                         <Comments videoId={videoId}/>
                     </div>
                 </div>

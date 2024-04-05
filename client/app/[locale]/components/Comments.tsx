@@ -122,9 +122,9 @@ const Comments = (videoId: any) => {
                     <img className='w-10 h-10 rounded-full' src={comment.profilePicture}/>
                   </div>
                   <div>
-                    <Link href={'/user/'+comment.userId} className='me-2 font-bold'>{comment.username}</Link>
+                    <Link href={'/user/'+comment.userId} className='me-2 font-bold text-md'>{comment.username}</Link>
                     <div className='grid grid-cols-[90%_2%] mt-2 h-10'>
-                      <p className='inline-block break-all'>{comment.comment}</p>
+                      <p className='inline-block break-all text-sm'>{comment.comment}</p>
                         {
                           userId === comment.userId
                           ?
