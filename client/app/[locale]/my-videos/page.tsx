@@ -116,7 +116,7 @@ const MyVideos = () => {
                 <div className='w-full text-center ps-10 pe-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-20'>
                     {
                         videos.map((video,i)=>{
-                            return <div key={i} className='card w-96 mb-10 text-lg mx-auto'>
+                            return <div key={i} className='card w-86 mb-10 text-lg mx-auto'>
                                 <Link href={'/watch/'+video._id} className='card-body p-0'>
                                     <video disableRemotePlayback src={video.videoUrl} className='rounded-sm'/>
                                 </Link>
