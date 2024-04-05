@@ -104,7 +104,7 @@ const LikeVideo = (videoId: any) => {
                     }
                 </div>
                 <div className='ps-2 lg:pe-5'>
-                    <p className='ms-2 text-xs sm:text-sm'>{reactionsNumber}</p>
+                    <p className='ms-2 text-xs'>{reactionsNumber}</p>
                 </div>
                 
             </button>
