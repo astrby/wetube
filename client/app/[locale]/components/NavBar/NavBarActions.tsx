@@ -68,7 +68,7 @@ const NavBarActions = ({login, signup, uploadVideo, logout, myVideos, editProfil
                         <div tabIndex={0} role='button' className='btn btn-ghost md:hidden hover:bg-lime-200'>
                             <IoMenuSharp className='size-10'/>
                         </div>
-                        <ul className='menu menu-sm dropdown-content mt-10 bg-base-100 rounded w-36 text-sm'>
+                        <ul className='menu menu-sm dropdown-content mt-10 bg-base-100 rounded w-36'>
                             <li>
                                 <Link href='/login'>{login}</Link>
                             </li>
@@ -77,7 +77,7 @@ const NavBarActions = ({login, signup, uploadVideo, logout, myVideos, editProfil
                             </li>
                         </ul>
                     </div>
-                    <div className='hidden md:grid md:grid-cols-2 gap-2 pe-4 md:w-52 lg:w-56 mx-auto'>
+                    <div className='hidden md:grid md:grid-cols-2 gap-2 pe-4 md:w-52 lg:w-56 mx-auto text-sm'>
                         <Link href='/login' className='ms-auto pe-2 w-fit'>{login}</Link>
                         <Link href='/signup' className='w-fit'>{signup}</Link>
                     </div>

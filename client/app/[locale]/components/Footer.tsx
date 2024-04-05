@@ -7,7 +7,7 @@ const Footer = async() => {
 
   return (
     <footer className="pt-2 pb-2 bg-neutral text-neutral-content">
-        <p className='text-center text-sm'>{scopedT('footer')}</p>
+        <p className='text-center'>{scopedT('footer')}</p>
     </footer>
   )
 }
