@@ -107,7 +107,7 @@ const Comments = (videoId: any) => {
   },[])
 
   return (
-    <div>
+    <div className='pb-40'>
       <div className='w-full'>
           <textarea className='textarea textarea-bordered w-full resize-none text-md' placeholder={scopedT('commentText')} maxLength={1000} id='comment'/>
           <button onClick={postComment} className='btn btn-accent mt-2 text-sm'>{scopedT('commentButton')}</button>
