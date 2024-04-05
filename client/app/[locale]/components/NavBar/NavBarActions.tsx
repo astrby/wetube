@@ -68,7 +68,7 @@ const NavBarActions = ({login, signup, uploadVideo, logout, myVideos, editProfil
                         <div tabIndex={0} role='button' className='btn btn-ghost md:hidden hover:bg-lime-200'>
                             <IoMenuSharp className='size-10'/>
                         </div>
-                        <ul className='menu menu-sm dropdown-content mt-10 bg-base-100 rounded w-36'>
+                        <ul className='menu menu-sm dropdown-content mt-10 bg-base-100 rounded w-36 text-sm'>
                             <li>
                                 <Link href='/login'>{login}</Link>
                             </li>
