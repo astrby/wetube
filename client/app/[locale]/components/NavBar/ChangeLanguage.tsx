@@ -8,11 +8,11 @@ const ChangeLanguage = () => {
   const changeLocale = useChangeLocale();
 
   return (
-    <div className='gap-1 text-lg'>
-          <button value='es' className='text-md' onClick={()=>{
+    <div className='gap-1 text-sm'>
+          <button value='es' className='text-sm' onClick={()=>{
             changeLocale('es')
           }}>ES</button>
-          <button value='en' className='text-md' onClick={()=>{
+          <button value='en' className='text-sm' onClick={()=>{
             changeLocale('en')
           }}>EN</button>
         </div>
