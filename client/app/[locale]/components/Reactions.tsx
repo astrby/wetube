@@ -92,8 +92,8 @@ const LikeVideo = (videoId: any) => {
     },[])
 
     return (
-        <div className=' pe-2 mt-5 '>
-            <button onClick={postReaction} className='btn btn-accent ps-6 pe-6 w-full grid grid-cols-[20%_20%]'>
+        <div className='2 mt-5 '>
+            <button onClick={postReaction} className='btn btn-accent ps-8 pe-8 w-3/4 grid grid-cols-[20%_20%]'>
                 {
                     reaction === false
                     ?

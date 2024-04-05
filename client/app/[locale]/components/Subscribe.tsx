@@ -56,7 +56,7 @@ const Subscribe = (params:any) => {
     },[])
 
     return (
-        <div className='pt-5 w-full'>
+        <div className='pt-5 w-3/4'>
             {
             
             subscribed === true
