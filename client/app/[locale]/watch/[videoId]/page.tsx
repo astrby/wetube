@@ -55,16 +55,16 @@ const Video = () => {
                         <div className='grid grid-cols-[65%_35%]'>
                             <p className='text-xl font-bold break-all pt-5'>{video.videoName}</p>
                             
-                                {
-                                    video.userId === userId
-                                    ?
-                                        null
-                                    :
-                                    <div className='grid grid-cols-[40%_40%] gap-2 justify-end'>
-                                        <Subscribe videoUserId={video.userId}/>
-                                        <Reactions/>
-                                    </div>
-                                }
+                            {
+                                video.userId === userId
+                                ?
+                                    null
+                                :
+                                <div className='grid grid-cols-[40%_40%] gap-2 justify-end pe-2'>
+                                    <Subscribe videoUserId={video.userId}/>
+                                    <Reactions/>
+                                </div>
+                            }
                         </div>
                     </div>
                     <div className='bg-neutral-200 rounded mt-10 min-h-20'>
