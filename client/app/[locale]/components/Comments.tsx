@@ -117,7 +117,7 @@ const Comments = (videoId: any) => {
         comments.length>0
         ?
           comments.map((comment,i)=>{
-            return <div key={i} className='mt-5 grid grid-cols-[5%_90%] text-lg'>
+            return <div key={i} className='mt-5 grid grid-cols-[10%_85%] text-lg'>
                   <div  className='flex flex-col items-center justify-center me-5 mb-2'>
                     <img className='w-10 h-10 rounded-full' src={comment.profilePicture}/>
                   </div>
