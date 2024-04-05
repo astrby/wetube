@@ -34,7 +34,7 @@ const ProfilePicture = () => {
             ?
                 <img className='rounded-full' src={profilePicture}/>
             :
-                <p className='text-lg'>{scopedT('me')}</p>
+                <p className='text-md'>{scopedT('me')}</p>
         }
     </div>
   )

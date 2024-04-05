@@ -36,7 +36,7 @@ const NavBarActions = ({login, signup, uploadVideo, logout, myVideos, editProfil
         {
             token
             ?
-                <div className='text-lg grid grid-cols-[60%_40%]'>
+                <div className='text-md grid grid-cols-[60%_40%]'>
                     <details className='dropdown dropdown-end me-5'>
                         <summary className='btn border-hidden hover:bg-lime-200 bg-lime-200 shadow-none'>
                             <div className='w-10'>

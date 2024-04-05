@@ -75,7 +75,7 @@ const SignupPage = () => {
     <div className='mt-20 items-center text-center'>
         <div className='card shadow-xl w-2/3 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/5 mx-auto border-2'>
             <div className='card-body'>
-                <p className='font-bold text-xl mb-5 mt-5'>{scopedT('signupHeader')}</p>
+                <p className='font-bold text-lg mb-5 mt-5'>{scopedT('signupHeader')}</p>
                 <input type='text' placeholder={scopedT('name')} className='input input-bordered' id='name' maxLength={100}/>
                 <input type='text' placeholder={scopedT('username')} className='input input-bordered mt-5' id='username'/>
                 <input type='email' placeholder={scopedT('email')} className='input input-bordered mt-5' id='email'/>

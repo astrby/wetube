@@ -19,7 +19,7 @@ const Videos = ({videos}:any) => {
                 {
                     videos.map((video:Video, i:number)=>{
                         {i=i+1}
-                        return <div className='card w-96 mb-10 mx-auto' key={i}>
+                        return <div className='card w-80 mb-10 mx-auto' key={i}>
                             <div className='card-body p-0'>
                                 <Link href={'/watch/'+video._id}>
                                     <video disableRemotePlayback className='rounded' src={video.videoUrl}></video>

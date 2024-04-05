@@ -62,7 +62,7 @@ const LoginPage = () => {
     <div className='mt-20 items-center text-center'>
         <div className='card shadow-xl w-2/3 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/5 mx-auto border-2'>
             <div className='card-body'>
-                <p className='font-bold text-xl mb-5 mt-5'>{scopedT('credentials')}</p>
+                <p className='font-bold text-md mb-5 mt-5'>{scopedT('credentials')}</p>
                 <input type='text' placeholder={scopedT('email')} className='input input-bordered' id='email'/>
                 <input type='password' placeholder={scopedT('password')} className='input input-bordered mt-5' id='password'/>
                 <button onClick={login} className='btn btn-accent w-1/2 mx-auto mt-5'>{scopedT('loginButton')}</button>

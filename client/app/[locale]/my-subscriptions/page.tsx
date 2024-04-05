@@ -72,7 +72,7 @@ const Page = () => {
       <div className='drawer-side'>
         <label htmlFor='my-drawer' aria-label='close sidebar' className='drawer-overlay'></label>
         <ul className='menu p-4 w-60 min-h-[calc(100vh-9rem)] text-base-content bg-base-200 mt-24 rounded-tr-md rounded-br-md'>
-        <p className='ps-2 text-center text-lg font-bold mb-5 mt-2'>{scopedTSubscriptions('subscriptions')}</p>
+        <p className='ps-2 text-center text-md font-bold mb-5 mt-2'>{scopedTSubscriptions('subscriptions')}</p>
           {
             users && users.length>0
             ?
@@ -82,11 +82,11 @@ const Page = () => {
                   {
                     user.profilePicture.trim() === ''
                     ?
-                    <p className='text-lg rounded-full border h-3/5'>{user.username.substring(0,1)}</p>
+                    <p className='text-md rounded-full border h-3/5'>{user.username.substring(0,1)}</p>
                     :
                     <img src={user.profilePicture} className='w-10 h-10 rounded-full'/>
                   }
-                  <p className='h-2/5 text-lg me-auto ms-2'>{user.username.substring(0,10)}</p>
+                  <p className='h-2/5 text-md me-auto ms-2'>{user.username.substring(0,10)}</p>
                 </Link>
               </div>
             })

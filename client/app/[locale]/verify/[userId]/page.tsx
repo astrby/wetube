@@ -33,7 +33,7 @@ const Page = () => {
 
   return (
     <div className='mx-auto pt-10'>
-      <p className='text-xl'>{scopedTVerified('verified')}</p>
+      <p className='text-lg'>{scopedTVerified('verified')}</p>
     </div>
   )
 }

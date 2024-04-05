@@ -143,11 +143,11 @@ const EditProfile = () => {
 
     return (
         <div>
-            <p className='text-center mt-8 text-4xl mb-5'>{scopedT('profile')}</p>
+            <p className='text-center mt-8 text-xl mb-5'>{scopedT('profile')}</p>
             {
                 user
                 ?
-                    <div className='grid grid-cols-2 w-full text-center text-lg'>
+                    <div className='grid grid-cols-2 w-full text-center text-md'>
                         <div className='ms-auto flex flex-col items-center justify-center ps-10 pt-5'>
                             <div className='w-40 md:w-52 h-52 me-auto'>
                                 <ProfilePicture/>
@@ -162,7 +162,7 @@ const EditProfile = () => {
                             <p>{scopedT('email')}</p>
                             <input className='input input-bordered mt-2 mb-5 md:w-80' placeholder={user.email} id='email'/>
                             <br/>
-                            <button onClick={updateUser} className='btn btn-accent text-lg mt-2'>{scopedT('updateUserButton')}</button>
+                            <button onClick={updateUser} className='btn btn-accent text-md mt-2'>{scopedT('updateUserButton')}</button>
                         </div>
                     </div>
                 :

@@ -49,11 +49,11 @@ const Video = () => {
             {
                 video
                 ?
-                <div className='p-2 md:p-10 lg:w-3/4 xl:w-3/5 xl:ms-20 text-lg'>
+                <div className='p-2 md:p-10 lg:w-3/4 xl:w-3/5 xl:ms-20 text-md'>
                     <div>
                         <video className='rounded mt-4' src={video.videoUrl} controls/>
                         <div className='grid grid-cols-[65%_35%]'>
-                            <p className='text-2xl font-bold break-all pt-5'>{video.videoName}</p>
+                            <p className='text-xl font-bold break-all pt-5'>{video.videoName}</p>
                             
                                 {
                                     video.userId === userId
@@ -95,7 +95,7 @@ const Video = () => {
                     }
                     </div>
                     <div className='mt-5 ps-2'>
-                        <p className='pt-5 text-xl font-bold mb-10'>{scopedT('comments')}</p>
+                        <p className='pt-5 text-lg font-bold mb-10'>{scopedT('comments')}</p>
                         <Comments videoId={videoId}/>
                     </div>
                 </div>

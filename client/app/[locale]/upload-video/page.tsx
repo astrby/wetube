@@ -96,7 +96,7 @@ const UploadVideo = () => {
         <div className='mt-20 text-center items-center '>
             <div className='card shadow-xl border-2 rounded-lg w-2/3 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto'>
                 <div className='card-body'>
-                    <p className='font-bold text-xl mb-10'>{scopedT('videoText')}</p>
+                    <p className='font-bold text-lg mb-10'>{scopedT('videoText')}</p>
                     <input type='text' placeholder={scopedT('videoNamePlaceholder')} className='input input-bordered border-2' id='videoName' maxLength={100}/>
                     <textarea placeholder={scopedT('videoDescriptionPlaceholder')}  className='textarea textarea-bordered border-2 mt-10 resize-none' id='videoDescription' maxLength={1000}/>
                     <input type='file' placeholder='Nombre del video' className='file-input rounded-lg border-2 mt-10'  id='videoFile'/>

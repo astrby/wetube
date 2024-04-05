@@ -48,7 +48,7 @@ const Page = () => {
 
     return (
         <div>
-            <p className='text-2xl w-full text-center font-bold mt-10 break-all px-5'>{scopedT('resultsTitle')} {decodeURIComponent(search.toString())}</p>
+            <p className='text-xl w-full text-center font-bold mt-10 break-all px-5'>{scopedT('resultsTitle')} {decodeURIComponent(search.toString())}</p>
             <Videos videos={videos}/>
         </div>
     )

@@ -109,14 +109,14 @@ const MyVideos = () => {
 
   return (
     <div>
-        <p className='text-center pt-10 text-2xl font-bold'>{scopedT ('myVideos')}</p>
+        <p className='text-center pt-10 text-xl font-bold'>{scopedT ('myVideos')}</p>
             {
                 videos.length>0
                 ?
                 <div className='w-full text-center ps-20 pe-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-20'>
                     {
                         videos.map((video,i)=>{
-                            return <div key={i} className='card w-96 mb-10 text-xl mx-auto'>
+                            return <div key={i} className='card w-96 mb-10 text-lg mx-auto'>
                                 <Link href={'/watch/'+video._id} className='card-body p-0'>
                                     <video disableRemotePlayback src={video.videoUrl} className='rounded-sm'/>
                                 </Link>
@@ -133,11 +133,11 @@ const MyVideos = () => {
                                                 <li onClick={()=>{(document.getElementById('modal')as HTMLDialogElement).showModal();
                                                     setSelectedVideo(video)
                                                 }}
-                                                className='hover:cursor-pointer hover:bg-base-200 px-2 text-lg'>{scopedT ('editButton')}</li>
+                                                className='hover:cursor-pointer hover:bg-base-200 px-2 text-md'>{scopedT ('editButton')}</li>
                                             </ul>
                                             <ul>
                                                 <li onClick={()=>{(document.getElementById('deleteModal') as HTMLDialogElement).showModal()}}
-                                                className='hover:cursor-pointer hover:bg-base-200 px-2 text-lg'>{scopedT ('deleteButton')}</li>
+                                                className='hover:cursor-pointer hover:bg-base-200 px-2 text-md'>{scopedT ('deleteButton')}</li>
                                             </ul>
                                         </div>
                                     </details>
@@ -154,8 +154,8 @@ const MyVideos = () => {
                             <div className='mt-5 pb-10'>
                                 <p className='font-bold'>{scopedT ('deleteVideoText')}</p>
                                 <div className='w-1/2 grid grid-cols-2 mx-auto mt-10'>
-                                    <button className='btn btn-success w-3/4 mx-auto text-lg' onClick={()=>{deleteVideo(selectedVideo!._id)}}>{scopedT ('deleteVideoYes')}</button>
-                                    <button className='btn btn-warning w-3/4 mx-auto text-lg' onClick={()=>{(document.getElementById('deleteModal') as HTMLDialogElement).close()}}>{scopedT ('deleteVideoNo')}</button>
+                                    <button className='btn btn-success w-3/4 mx-auto text-md' onClick={()=>{deleteVideo(selectedVideo!._id)}}>{scopedT ('deleteVideoYes')}</button>
+                                    <button className='btn btn-warning w-3/4 mx-auto text-md' onClick={()=>{(document.getElementById('deleteModal') as HTMLDialogElement).close()}}>{scopedT ('deleteVideoNo')}</button>
                                 </div>
                             </div>
                         </div>
@@ -166,12 +166,12 @@ const MyVideos = () => {
                                 <button className='btn btn-ghost absolute right-4 top-2'>X</button>
                             </form>
                             <div className='card-body'>
-                                <p className='mb-2 text-xl font-bold'>{scopedT ('videoName')}</p>
+                                <p className='mb-2 text-md font-bold'>{scopedT ('videoName')}</p>
                                 <input type='text' placeholder={selectedVideo?.videoName} className='text-center input input-bordered w-3/4 mx-auto' id='videoName'/>
-                                <p className='mt-5 text-xl font-bold'>{scopedT ('videoDescription')}</p>
+                                <p className='mt-5 text-md font-bold'>{scopedT ('videoDescription')}</p>
                                 <textarea className='mt-2 text-center resize-none input input-bordered w-3/4 mx-auto h-32' placeholder={selectedVideo?.videoDescription} id='videoDescription'/>
                                 <input defaultValue={selectedVideo?.videoDescription} id='defaultVideoDescription' className='hidden'/>
-                                <button className='btn btn-accent w-1/2 mx-auto mt-5 text-xl' onClick={editVideo}>{scopedT ('editButton')}</button>
+                                <button className='btn btn-accent w-1/2 mx-auto mt-5 text-md' onClick={editVideo}>{scopedT ('editButton')}</button>
                             </div>
                         </div>
                     </dialog>

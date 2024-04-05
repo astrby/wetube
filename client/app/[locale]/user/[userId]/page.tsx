@@ -61,7 +61,7 @@ const UserPage = () => {
                 <div className='w-full mx-auto'>
                     <div className='mt-10'>
                         <img className='w-28 rounded-full mx-auto' src={userProfile.userProfilePicture}/>
-                        <p className='text-2xl font-bold text-center mt-5'>{userProfile.username}</p>
+                        <p className='text-xl font-bold text-center mt-5'>{userProfile.username}</p>
                         <div className='mx-auto w-28 mt-10'>
                             <Subscribe videoUserId={params.userId}/>
                         </div>

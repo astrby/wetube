@@ -109,8 +109,8 @@ const Comments = (videoId: any) => {
   return (
     <div>
       <div className='w-full'>
-          <textarea className='textarea textarea-bordered w-full resize-none text-lg' placeholder={scopedT('commentText')} maxLength={1000} id='comment'/>
-          <button onClick={postComment} className='btn btn-accent mt-2 text-lg'>{scopedT('commentButton')}</button>
+          <textarea className='textarea textarea-bordered w-full resize-none text-md' placeholder={scopedT('commentText')} maxLength={1000} id='comment'/>
+          <button onClick={postComment} className='btn btn-accent mt-2 text-md'>{scopedT('commentButton')}</button>
       </div>
       <hr className='mt-5 mb-10'/>
       {
@@ -134,7 +134,7 @@ const Comments = (videoId: any) => {
                             </summary>
                             <div className='dropdown-content shadow menu rounded'>
                               <ul>
-                                <li onClick={()=>{deleteComment(comment.commentId)}} className='hover:cursor-pointer text-lg'>{scopedT('deleteComment')}</li>
+                                <li onClick={()=>{deleteComment(comment.commentId)}} className='hover:cursor-pointer text-md'>{scopedT('deleteComment')}</li>
                               </ul>
                             </div>
                           </details>
