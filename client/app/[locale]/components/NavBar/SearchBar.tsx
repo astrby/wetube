@@ -21,7 +21,7 @@ const SearchBar = ({search}: any) => {
     <div className='grid grid-cols-[50%_30%] md:grid-cols-[50%_10%] w-3/4 md:1/4 justify-center md:justify-start gap-1 md:ps-5'>
       <input type='text' className='input input-bordered w-full text-md' id='searchQuery'/>
       <button onClick={getSearch} className='btn btn-accent w-16 md:w-full'>
-        <p className='text-sm'>{search}</p>
+        <p className='text-xs'>{search}</p>
       </button>
     </div>
   )

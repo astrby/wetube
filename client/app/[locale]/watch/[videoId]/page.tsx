@@ -45,7 +45,7 @@ const Video = () => {
     },[])
 
     return (
-        <div className='pb-40'>
+        <div className='pb-32'>
             {
                 video
                 ?
