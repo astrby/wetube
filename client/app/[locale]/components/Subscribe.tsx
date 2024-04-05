@@ -56,14 +56,14 @@ const Subscribe = (params:any) => {
     },[])
 
     return (
-        <div className='pt-5 w-3/4'>
+        <div className='pt-5 w-full'>
             {
             
             subscribed === true
             ?
-                <div onClick={()=>{handleSubscription('unsubscribe')}} className='btn btn-accent w-full'>{scopedT('unsubscribeButton')}</div>
+                <div onClick={()=>{handleSubscription('unsubscribe')}} className='btn btn-accent w-full text-sm'>{scopedT('unsubscribeButton')}</div>
             :
-                <div onClick={()=>{handleSubscription('subscribe')}} className='btn btn-accent w-full'>{scopedT('subscribeButton')}</div>
+                <div onClick={()=>{handleSubscription('subscribe')}} className='btn btn-accent w-full text-sm'>{scopedT('subscribeButton')}</div>
             }
         </div>
     )
