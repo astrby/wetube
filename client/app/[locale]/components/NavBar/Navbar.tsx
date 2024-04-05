@@ -12,7 +12,7 @@ const Navbar = async() => {
   return (
     <div className='navbar pb-5 bg-lime-200 pt-5'>
         <div className='pl-5 font-bold flex-1'>
-            <Link href='/' className='text-2xl'>Wetube</Link>
+            <Link href='/' className='text-xl'>Wetube</Link>
         </div>
           <SearchBar search={scopedT('search')}/>
           <NavBarActions 
