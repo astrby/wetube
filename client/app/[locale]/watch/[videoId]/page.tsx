@@ -68,13 +68,13 @@ const Video = () => {
                         </div>
                     </div>
                     <div className='bg-neutral-200 rounded mt-10 min-h-20'>
-                    <p className='font-bold mt-1 bg-neutral-300 rounded p-1 ps-2'>{scopedT('description')}</p>
+                    <p className='font-bold mt-1 bg-neutral-300 rounded p-1 ps-2 text-sm'>{scopedT('description')}</p>
                     {
                         showMore === false
                         ?
-                            <p className='ps-2 pe-2 pt-2 break-all'>{video.videoDescription.substring(0,150)}</p>
+                            <p className='ps-2 pe-2 pt-2 break-all text-sm'>{video.videoDescription.substring(0,150)}</p>
                         :
-                            <p className='ps-2 pe-2 pt-2 break-all'>{video.videoDescription}</p>
+                            <p className='ps-2 pe-2 pt-2 break-all text-sm'>{video.videoDescription}</p>
                     }
                     {
                         video.videoDescription.length>150
