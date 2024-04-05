@@ -113,7 +113,7 @@ const MyVideos = () => {
             {
                 videos.length>0
                 ?
-                <div className='w-full text-center pe-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-20'>
+                <div className='w-full text-center ps-10 pe-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-20'>
                     {
                         videos.map((video,i)=>{
                             return <div key={i} className='card w-96 mb-10 text-lg mx-auto'>
