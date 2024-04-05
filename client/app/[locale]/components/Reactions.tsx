@@ -98,7 +98,7 @@ const LikeVideo = (videoId: any) => {
                     {
                         reaction === false
                         ?
-                            <AiOutlineLike className='size-5'/>
+                            <AiOutlineLike className='size-4'/>
                         :
                             <AiFillLike className='size-4'/>
                     }

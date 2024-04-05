@@ -60,7 +60,7 @@ const Video = () => {
                                 ?
                                     null
                                 :
-                                <div className='grid grid-cols-[40%_40%] gap-2 justify-end pe-2'>
+                                <div className='grid grid-cols-[45%_45%] gap-2 justify-end pe-2'>
                                     <Subscribe videoUserId={video.userId}/>
                                     <Reactions/>
                                 </div>
