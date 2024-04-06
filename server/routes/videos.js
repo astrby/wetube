@@ -41,7 +41,8 @@ router.post('/upload-video', verifyJWT, async(req,res)=>{
             videoName: videoName,
             videoDescription: videoDescription,
             videoUrl: '',
-            userId: userId
+            userId: userId,
+            views: 0,
         })
         await videoDB.save()
         .then(
@@ -74,6 +75,12 @@ router.post('/get-video', async(req,res)=>{
 
     try{
         const video = await Video.findById(videoId);
+
+        await Video.updateOne(
+            {_id: videoId},
+            {$inc: {views:1}},
+        )
+
         return res.json(video);
 
     }catch(err){

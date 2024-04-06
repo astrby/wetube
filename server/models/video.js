@@ -6,7 +6,8 @@ const videoSchema = new Schema({
     videoName: String,
     videoDescription: String,
     videoUrl: String,
-    userId: String
+    userId: String,
+    views: Number,
 },{collection: 'videos'});
 
 const Video = mongoose.model('Video', videoSchema);
