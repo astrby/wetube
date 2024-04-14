@@ -79,6 +79,7 @@ router.post('/get-video', async(req,res)=>{
         await Video.updateOne(
             {_id: videoId},
             {$inc: {views:1}},
+            {upsert: true},
         )
 
         return res.json(video);
