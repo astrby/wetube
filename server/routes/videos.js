@@ -10,20 +10,25 @@ router.get('/get-videos', async(req,res)=>{
         const videos = await Video.find();
         if(videos){
             const videosList = [];
+
             await Promise.all(
                 videos.map(async(video)=>{
                     await User.findById(video.userId)
                     .then((user)=>{
-                        videosList.push({
-                            _id: video._id,
-                            videoName: video.videoName,
-                            videoUrl: video.videoUrl,
-                            username: user.username,
-                            userId: user._id,
-                        })
+                        if(user){
+                            console.log(user)
+                            videosList.push({
+                                _id: video._id,
+                                videoName: video.videoName,
+                                videoUrl: video.videoUrl,
+                                username: user.username,
+                                userId: user._id,
+                            })
+                        }
                     })
                 })
             )
+
             return res.json(videosList)
         }else{
             return res.json('No videos found')

@@ -38,8 +38,8 @@ const Video = () => {
         .then(res=>{
             return setVideo(res);
         })
-    } 
-
+    }
+    
     useEffect(()=>{
         fetchVideo();
     },[])
