@@ -18,7 +18,6 @@ interface Video{
 }
 
 const Video = () => {
-  
     const params = useParams();
     const videoId = params.videoId;
     const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -29,6 +28,9 @@ const Video = () => {
     
     const fetchVideo = async()=>{
         await fetch(serverUrl+'/api/videos/get-video',{
+            next:{
+                revalidate: 1
+            },
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +39,6 @@ const Video = () => {
         })
         .then((response)=>response.json())
         .then(res=>{
-            console.log(res)
             return setVideo(res);
         })
     } 
