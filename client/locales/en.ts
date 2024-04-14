@@ -70,7 +70,8 @@ export default{
         "commentButton":"Send comment",
         "comments":"Comments",
         "commentText":"Write a comment. Max. 1000 characters.","deleteComment":"Delete",
-        "description":"Description"
+        "description":"Description",
+        "views":"views",
     },
     uploadVideo:{
         "videoText":"Video",

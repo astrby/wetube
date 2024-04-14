@@ -14,6 +14,7 @@ interface Video{
     videoDescription: string,
     videoUrl: string,
     userId: string,
+    views: number,
 }
 
 const Video = () => {
@@ -52,15 +53,15 @@ const Video = () => {
                 <div className='p-2 md:p-10 lg:w-3/4 xl:w-3/5 xl:ms-20 text-md'>
                     <div>
                         <video className='rounded mt-4' src={video.videoUrl} controls/>
-                        <div className='grid grid-cols-[65%_35%]'>
+                        <div className='grid grid-cols-[45%_55%] lg:grid-cols-[55%_45%]'>
                             <p className='text-xl font-bold break-all pt-5'>{video.videoName}</p>
-                            
                             {
                                 video.userId === userId
                                 ?
                                     null
                                 :
-                                <div className='grid grid-cols-[45%_45%] lg:grid-cols-[35%_35%]  gap-2 justify-end'>
+                                <div className='grid grid-cols-[45%_25%_25%] lg:grid-cols-[35%_25%_25%] gap-2 justify-end'>
+                                    <p className='mt-8 text-md'>{video.views} {scopedT('views')}</p>
                                     <Subscribe videoUserId={video.userId}/>
                                     <Reactions/>
                                 </div>

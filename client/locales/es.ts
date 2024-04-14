@@ -66,7 +66,8 @@ export default{
         "comments":"Comentarios",
         "commentText":"Escribe un comentario. Max. 1000 caracteres.",
         "deleteComment":"Borrar",
-        "description":"Descripción"
+        "description":"Descripción",
+        "views":"visualizaciones",
     },
     uploadVideo:{
         "videoText":"Video",
