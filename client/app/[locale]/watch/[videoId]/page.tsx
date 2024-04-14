@@ -60,8 +60,8 @@ const Video = () => {
                                 ?
                                     null
                                 :
-                                <div className='grid grid-cols-[45%_25%_25%] lg:grid-cols-[35%_25%_25%] gap-2 justify-end'>
-                                    <p className='mt-8 text-md'>{video.views} {scopedT('views')}</p>
+                                <div className='grid grid-cols-[50%_25%_25%] lg:grid-cols-[40%_25%_25%] gap-2 justify-end'>
+                                    <p className='mt-8 text-md text-right me-4'>{video.views} {scopedT('views')}</p>
                                     <Subscribe videoUserId={video.userId}/>
                                     <Reactions/>
                                 </div>
