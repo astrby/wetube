@@ -17,6 +17,7 @@ interface Video{
     views: number,
 }
 
+export const dynamic = 'force-dynamic';
 const Video = () => {
     const params = useParams();
     const videoId = params.videoId;
@@ -28,9 +29,6 @@ const Video = () => {
     
     const fetchVideo = async()=>{
         await fetch(serverUrl+'/api/videos/get-video',{
-            next:{
-                revalidate: 1
-            },
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
