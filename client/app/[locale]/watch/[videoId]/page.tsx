@@ -37,7 +37,7 @@ const Video = () => {
         })
         .then((response)=>response.json())
         .then(res=>{
-            console.log(1)
+            console.log(res)
             return setVideo(res);
         })
     } 
