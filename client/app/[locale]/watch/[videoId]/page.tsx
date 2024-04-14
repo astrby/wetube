@@ -39,10 +39,21 @@ const Video = () => {
         .then(res=>{
             return setVideo(res);
         })
-    } 
+    }
+
+    const updateViews = async()=>{
+        await fetch(serverUrl+'/api/videos/update-views',{
+            method: 'POST',
+            headers: {
+                'Content-Type':'application/json',
+            },
+            body: JSON.stringify({videoId: videoId}),
+        });
+    }
 
     useEffect(()=>{
         fetchVideo();
+        updateViews();
     },[])
 
     return (

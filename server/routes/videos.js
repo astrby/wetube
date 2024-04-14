@@ -76,16 +76,24 @@ router.post('/get-video', async(req,res)=>{
     try{
         const video = await Video.findById(videoId);
 
+        return res.json(video);
+
+    }catch(err){
+        return res.json(err)
+    }
+})
+
+router.post('/update-views', async(req,res)=>{
+    const {videoId} = req.body;
+
+    try{
         await Video.updateOne(
             {_id: videoId},
             {$inc: {views:1}},
             {upsert: true},
         )
-
-        return res.json(video);
-
     }catch(err){
-        return res.json(err)
+        return console.log(err)
     }
 })
 
